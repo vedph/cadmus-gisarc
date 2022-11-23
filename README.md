@@ -4,33 +4,58 @@ This is the core for the Cadmus GISARC project.
 
 ## Inscriptions
 
-- external IDs: all the IDs linked to the inscription (ISicily and eventually others).
+Inscription ID should be equal to ISiciliy ID.
+
+General:
+
+- external IDs\*: all the IDs linked to the inscription (ISicily and eventually others).
 - metadata: general purpose metadata.
-- categories: general thematic tags from some taxonomy.
-- keywords: multiple-language keywords.
+- location\*
+- date\*
+- [epigraphic support](#episupport)
+- [epigraphic writing](#epiwriting)
+
+Classification:
+
+- categories\*: general thematic tags from some taxonomy.
+- index keywords: multiple-language keywords.
+
+Comment:
+
 - comment: generic comment.
 - note: free text note. Might be useful for redactional purposes.
+
+References:
+
+- references: short documentary references.
 - bibliography.
+
+Text:
 
 - text: text or a part of it when required.
 - apparatus layer: critical apparatus.
 - orthography layer: can be used to annotate and categorize linguistic phenomena reflected in orthography.
 - comment layer: can be used to comment specific words of the text.
 
-- epi support: see below.
-- epi writing: see below.
-- location: see below.
-
 ## Sites
 
 Site ID is its title.
 
+General:
+
 - name(s)
 - metadata
 - external IDs
+
+Comment:
+
 - comment
 - note
-- bibliography part
+
+References:
+
+- references
+- bibliography
 
 ## New Models
 
@@ -38,7 +63,7 @@ Site ID is its title.
 
 - latitude\* (number)
 - longitude\* (number)
-- altitude (number, mt, optional)
+- altitude (number, expressed in mt; optional)
 - geometries (string[])
 
 ### EpiWriting
