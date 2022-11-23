@@ -48,7 +48,11 @@ Site ID is its title.
 - technique (string, thesaurus)
 - tool (string, thesaurus)
 - frameType (string, thesaurus)
-- counts (DecoratedCount[])
+- counts (DecoratedCount[]):
+  - id\* (string)
+  - tag (string)
+  - value\* (number)
+  - note (string)
 - figType (string, thesaurus)
 - figFeatures (string[], thesaurus)
 - scriptFeatures (string[], thesaurus)
@@ -64,6 +68,14 @@ Site ID is its title.
 - supportType (string, thesaurus)
 - material\* (string, thesaurus)
 - indoor (boolean)
-- size (PhysicalSize)
+- size (PhysicalSize):
+  - tag (string)
+  - w (PhysicalSize):
+    - value\* (number)
+    - unit\* (string)
+    - tag (string)
+  - h (PhysicalSize)
+  - d (PhysicalSize)
+  - note (string)
 - state (string, thesaurus)
 - lastSeen (date)
