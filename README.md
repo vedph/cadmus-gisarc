@@ -10,7 +10,7 @@ General:
 
 - external IDs\*: all the IDs linked to the inscription (ISicily and eventually others).
 - metadata: general purpose metadata.
-- location\*
+- [location](#location)\*
 - date\*
 - [epigraphic support](#episupport)
 - [epigraphic writing](#epiwriting)
