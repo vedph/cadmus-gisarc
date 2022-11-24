@@ -61,46 +61,46 @@ References:
 
 ### Location
 
-- latitude\* (number)
-- longitude\* (number)
-- altitude (number, expressed in mt; optional)
-- geometries (string[])
+- `latitude`\* (number)
+- `longitude`\* (number)
+- `altitude` (number, expressed in mt; optional)
+- `geometries` (string[])
 
 ### EpiWriting
 
-- system (string, thesaurus usually ISO 15924 lowercase)
-- type (string, thesaurus)
-- technique (string, thesaurus)
-- tool (string, thesaurus)
-- frameType (string, thesaurus)
-- counts (DecoratedCount[]):
-  - id\* (string)
-  - tag (string)
-  - value\* (number)
-  - note (string)
-- figType (string, thesaurus)
-- figFeatures (string[], thesaurus)
-- scriptFeatures (string[], thesaurus)
-- languages (string[], usually ISO 639-3)
-- hasPoetry (boolean)
-- metres (string[])
+- `system` (string, thesaurus usually ISO 15924 lowercase)
+- `type` (string, thesaurus)
+- `technique` (string, thesaurus)
+- `tool` (string, thesaurus)
+- `frameType` (string, thesaurus)
+- `counts` (DecoratedCount[]):
+  - `id`\* (string)
+  - `tag` (string)
+  - `value`\* (number)
+  - `note` (string)
+- `figType` (string, thesaurus)
+- `figFeatures` (string[], thesaurus)
+- `scriptFeatures` (string[], thesaurus)
+- `languages` (string[], usually ISO 639-3)
+- `hasPoetry` (boolean)
+- `metres` (string[])
 
 ### EpiSupport
 
-- originalFn (string, thesaurus)
-- currentFn (string, thesaurus)
-- objectType (string, thesaurus)
-- supportType (string, thesaurus)
-- material\* (string, thesaurus)
-- indoor (boolean)
-- size (PhysicalSize):
-  - tag (string)
-  - w (PhysicalSize):
-    - value\* (number)
-    - unit\* (string)
-    - tag (string)
-  - h (PhysicalSize)
-  - d (PhysicalSize)
-  - note (string)
-- state (string, thesaurus)
-- lastSeen (date)
+- `material`\* (string, thesaurus: `epi-support-materials`)
+- `originalFn` (string, thesaurus: `epi-support-functions`)
+- `currentFn` (string, thesaurus: `epi-support-functions`)
+- `objectType` (string, thesaurus: `epi-support-object-types`)
+- `supportType` (string, thesaurus: `epi-support-types`)
+- `indoor` (boolean)
+- `size` (`PhysicalSize`):
+  - `tag` (string, thesaurus: `physical-size-tags`)
+  - `w` (PhysicalSize):
+    - `value`\* (number)
+    - `unit`\* (string, thesaurus: `physical-size-units`)
+    - `tag` (string, thesaurus: `physical-size-dim-tags`)
+  - `h` (PhysicalSize)
+  - `d` (PhysicalSize)
+  - `note` (string)
+- `state` (string, thesaurus: `epi-support-states`)
+- `lastSeen` (date)
