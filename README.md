@@ -68,20 +68,20 @@ References:
 
 ### EpiWriting
 
-- `system` (string, thesaurus usually ISO 15924 lowercase)
-- `type` (string, thesaurus)
-- `technique` (string, thesaurus)
-- `tool` (string, thesaurus)
-- `frameType` (string, thesaurus)
+- `system` (string, thesaurus: `epi-writing-systems`, usually ISO 15924 lowercase)
+- `type` (string, thesaurus: `epi-writing-types`)
+- `technique` (string, thesaurus: `epi-writing-techniques`)
+- `tool` (string, thesaurus: `epi-writing-tools`)
+- `frameType` (string, thesaurus: `epi-writing-frame-types`)
 - `counts` (DecoratedCount[]):
-  - `id`\* (string)
-  - `tag` (string)
+  - `id`\* (string, thesaurus: `decorated-count-ids`)
+  - `tag` (string, thesaurus: `decorated-count-tags`)
   - `value`\* (number)
   - `note` (string)
-- `figType` (string, thesaurus)
-- `figFeatures` (string[], thesaurus)
-- `scriptFeatures` (string[], thesaurus)
-- `languages` (string[], usually ISO 639-3)
+- `figType` (string, thesaurus: `epi-writing-fig-types`)
+- `figFeatures` (string[], thesaurus: `epi-writing-fig-features`)
+- `scriptFeatures` (string[], thesaurus, `epi-writing-script-features`)
+- `languages` (string[], thesaurus: `epi-writing-languages`, usually ISO 639-3)
 - `hasPoetry` (boolean)
 - `metres` (string[])
 
