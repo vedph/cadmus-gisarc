@@ -10,7 +10,8 @@ General:
 
 - external IDs\*: all the IDs linked to the inscription (ISicily and eventually others).
 - metadata: general purpose metadata.
-- [location](#location)\*
+- [location](#location)\*: geographic location. This is used to pinpoint the inscription on a map. The link to a site is managed via the pin links part.
+- pin links: link to the site containing the inscription, if any. The site must be a site item with a metadata part having a metadatum named `hid` equal to the human-friendly ID we want to use to identify it in order to link it to inscriptions.
 - date\*
 - [epigraphic support](#episupport)
 - [epigraphic writing](#epiwriting)
@@ -18,7 +19,7 @@ General:
 Classification:
 
 - categories\*: general thematic tags from some taxonomy.
-- index keywords: multiple-language keywords.
+- index keywords: multiple-language keywords which can be grouped under several sections ("indexes").
 
 Comment:
 
@@ -39,12 +40,11 @@ Text:
 
 ## Sites
 
-Site ID is its title.
-
 General:
 
-- name(s)
-- metadata
+- name(s)\*: the site's name(s).
+- metadata\*: the site's metadata. This should at least include a `hid` metadatum whose value is the human-friendly ID used to link inscriptions to sites.
+- [location](#location)\*: geographic location. This is used to pinpoint the site on a map, as a point (representing its conventionally defined center) and eventually also as a region (defined with shapes like polygons).
 - external IDs
 
 Comment:
