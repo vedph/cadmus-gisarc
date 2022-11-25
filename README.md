@@ -83,7 +83,7 @@ References:
 - `scriptFeatures` (string[], thesaurus, `epi-writing-script-features`)
 - `languages` (string[], thesaurus: `epi-writing-languages`, usually ISO 639-3)
 - `hasPoetry` (boolean)
-- `metres` (string[])
+- `metres` (string[], thesaurus: `epi-writing-metres`)
 
 ### EpiSupport
 
@@ -104,3 +104,9 @@ References:
   - `note` (string)
 - `state` (string, thesaurus: `epi-support-states`)
 - `lastSeen` (date)
+
+## History
+
+### 1.0.1
+
+- 2022-11-25: updated packages.
