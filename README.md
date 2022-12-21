@@ -107,6 +107,10 @@ References:
 
 ## History
 
+### 1.0.2
+
+- 2022-12-21: updated packages.
+
 ### 1.0.1
 
 - 2022-11-25: updated packages.
